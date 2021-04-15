@@ -2,7 +2,7 @@
 import { Repository } from "../data/repository";
 import * as Interfaces from "../models/interfaces";
 import { TestsGroup } from './TestsGroup';
-import { Test } from './Tests';
+import { Test } from './Test';
 
 export class TestsTree extends React.Component {
     repository: Repository;

@@ -5,8 +5,8 @@ export class Test extends React.Component<{ dto: Interfaces.ILeafDto }> {
     render() {
         return (
             <div>
-                <a className="test-link" href="#"># {this.props.dto.id}</a>{this.props.dto.name}
-            </span>
+                <a className="test-link" href="#"># {this.props.dto.id}</a> {this.props.dto.name}
+            </div>
         );
     }
 }

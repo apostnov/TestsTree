@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\components\Tests.tsx" />
+    <None Remove="ClientApp\src\components\Test.tsx" />
     <None Remove="ClientApp\src\components\TestsGroup.tsx" />
     <None Remove="ClientApp\src\components\TestsTree.tsx" />
     <None Remove="ClientApp\src\data\repository.ts" />
@@ -29,9 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\components\Tests.tsx">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\src\components\Test.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\TestsGroup.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\TestsTree.tsx" />
     <TypeScriptCompile Include="ClientApp\src\data\repository.ts" />
