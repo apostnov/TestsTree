@@ -1,4 +1,4 @@
-To run app you can simply start project fromVS using IIS Express
+To run app you can simply start project from VS using IIS Express
 
 OR
 
