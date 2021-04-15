@@ -21,9 +21,10 @@ export class TestsGroup extends React.Component<{ dto: Interfaces.IGroupDto }> {
         e.nativeEvent.stopPropagation();
         e.nativeEvent.stopImmediatePropagation();
 
-        this.expanded = !this.expanded;
-
-        this.setState({});
+        if (this.props.dto.groupChildren?.length || this.props.dto.leafChildren?.length) {
+            this.expanded = !this.expanded;
+            this.setState({});
+        }
     }
 
     render() {
