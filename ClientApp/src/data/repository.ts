@@ -7,8 +7,32 @@ export class Repository {
                 id: 3000,
                 name: "Task", 
                 groupChildren: [{
+                    id: 32000,
+                    name: "Create"
+                },{
                     id: 31000,
-                    name: "Calendar"
+                        name: "Calendar",
+                        groupChildren: [{
+                            id: 32200,
+                            name: "Sub calendar"
+                        }],
+                        leafChildren: [
+                            {
+                                id: 31063,
+                                name: "Calendar 1",
+                                passed: false
+                            },
+                            {
+                                id: 31099,
+                                name: "Calendar 2",
+                                passed: true
+                            },
+                            {
+                                id: 30100,
+                                name: "Calendar 3",
+                                passed: true
+                            }
+                        ]
                 }, {
                     id: 30000,
                     name: "Invitation",
@@ -33,18 +57,30 @@ export class Repository {
             }, {
                 id: 40000,
                 name: "Account management",
+                leafChildren: [
+                    {
+                        id: 40011,
+                        name: "Account test 1",
+                        passed: false
+                    },
+                    {
+                        id: 40022,
+                        name: "Account test 2",
+                        passed: true
+                    }
+                ]
             }
             ],
         leafChildren: [
             {
                 id: 111,
                 name: "Top leaf test 1",
-                passed: false
+                passed: true
             },
             {
                 id: 2222,
                 name: "Top leaf test 2",
-                passed: true
+                passed: false
             },
         ]
     };

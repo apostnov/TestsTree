@@ -1,12 +1,13 @@
 ﻿import * as React from 'react'
+
 import { Repository } from "../data/repository";
-import * as Interfaces from "../models/interfaces";
+import { TestsTreeModel } from '../models/tests-tree-model';
 import { TestsGroup } from './TestsGroup';
 import { Test } from './Test';
 
 export class TestsTree extends React.Component {
     repository: Repository;
-    testsTree?: Interfaces.ITestCaseTreeDto;
+    testsTree?: TestsTreeModel;
 
     constructor(props: any) {
         super(props);
@@ -18,7 +19,7 @@ export class TestsTree extends React.Component {
     }
 
     async componentDidMount() {
-        this.testsTree = await this.repository.getTestCaseTreeAsync();
+        this.testsTree = new TestsTreeModel(await this.repository.getTestCaseTreeAsync());
         this.setState({});
     }
 
@@ -33,7 +34,7 @@ export class TestsTree extends React.Component {
             );
         }
 
-        const groups = this.testsTree.groupChildren?.map(item => <TestsGroup dto={item} />) ?? [];
+        const groups = this.testsTree.groups?.map(item => <TestsGroup dto={item} />) ?? [];
         const leafItems = this.testsTree.leafChildren?.map(item => <Test dto={item} />) ?? [];
 
         return (

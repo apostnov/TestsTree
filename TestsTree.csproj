@@ -25,7 +25,9 @@
     <None Remove="ClientApp\src\components\TestsGroup.tsx" />
     <None Remove="ClientApp\src\components\TestsTree.tsx" />
     <None Remove="ClientApp\src\data\repository.ts" />
+    <None Remove="ClientApp\src\data\tests-tree-model.ts" />
     <None Remove="ClientApp\src\models\interfaces.ts" />
+    <None Remove="ClientApp\src\models\test-group-model.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +35,8 @@
     <TypeScriptCompile Include="ClientApp\src\components\TestsGroup.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\TestsTree.tsx" />
     <TypeScriptCompile Include="ClientApp\src\data\repository.ts" />
+    <TypeScriptCompile Include="ClientApp\src\models\test-group-model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\models\tests-tree-model.ts" />
     <TypeScriptCompile Include="ClientApp\src\models\interfaces.ts" />
   </ItemGroup>
 
